@@ -30,7 +30,7 @@ Change OS of the RPi module:
 
 6. Once completed, you can power off the FlexCase and remove the micro-USB to restore normal function.
 
-        The host name and password are FlexCase01 and audesse_temp
+        The host name and password are FlexCase01 and audesse_temp. To change the host name, type "sudo raspi-config", select "System Options" and then "Hostname" to update the name and then finish to exit the application. To change the password, type "sudo passwd" and type the new password twice.
 
 7. Place the case back on. You will hear a click sound after a good fit.
 
