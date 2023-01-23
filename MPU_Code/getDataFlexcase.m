@@ -90,6 +90,12 @@ else
 
     clear rt_* rmCmd
     load(newFileString)
+    
+    % Do an error check on the stitching function
+    if any(diff(rt_tout) <= 0)
+        warning('Time vector is not continuously increasing. Data collection or stitching may have encountered errors.')
+    end
+    
     disp('Final data file reloaded into the workspace.')
     clear newFileString
     delete(retrieveFileBase + "*.mat")
